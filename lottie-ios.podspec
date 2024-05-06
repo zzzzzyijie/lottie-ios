@@ -27,7 +27,8 @@ Lottie enables designers to create and ship beautiful animations without an engi
   s.osx.deployment_target = '10.10'
   s.tvos.deployment_target = '11.0'
 
-  s.source_files = 'Sources/**/*'
+  s.source_files = 'Sources/**/*.swift'
+  s.resource_bundles = {'LottiePrivacyInfo' => ['Source/PrivacyInfo.xcprivacy']}
   s.ios.exclude_files = 'Sources/Public/MacOS/**/*'
   s.tvos.exclude_files = 'Sources/Public/MacOS/**/*'
   s.osx.exclude_files = 'Sources/Public/iOS/**/*'
@@ -37,5 +38,4 @@ Lottie enables designers to create and ship beautiful animations without an engi
   s.osx.frameworks = ['AppKit', 'CoreGraphics', 'QuartzCore']
   s.module_name = 'Lottie'
   s.header_dir = 'Lottie'
-  s.resource_bundles = {'lottie-ios' => ['Source/PrivacyInfo.xcprivacy']}
 end
